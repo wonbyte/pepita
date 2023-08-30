@@ -1,0 +1,8 @@
+# dirs
+.cache
+build
+docs
+test/Testing/**
+
+# coverage
+default.profraw

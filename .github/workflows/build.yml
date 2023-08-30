@@ -1,0 +1,35 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install CMake
+        run: sudo apt-get install -y cmake
+
+      - name: Install Ninja
+        run: sudo apt-get install -y ninja-build
+
+      - name: Build
+        run: |
+          mkdir build
+          cd build
+          cmake -G Ninja ..
+          ninja
+
+      - name: Run Tests
+        run: |
+          cd build
+          ctest
