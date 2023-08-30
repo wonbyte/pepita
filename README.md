@@ -3,7 +3,7 @@
 ![build](https://github.com/wonbyte/pepita/actions/workflows/build.yml/badge.svg)
 
 <p align="left">
-  <img width="400" height="400" src="">
+  <img width="400" height="400" src="https://github.com/wonbyte/pepita/assets/681965/b4fbfb26-7a1b-4bb3-b8fa-7b351284e1bd">
 </p>
 
 ## Building
